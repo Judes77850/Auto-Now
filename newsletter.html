@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XDCTXM84V5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XDCTXM84V5');
+</script>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="scss/style.css" />
+        <title>Auto-Now</title>
+    </head>
+
+    <body>
+<header>
+    <h1>
+        <a href="index.html" title="Accueil du site"><p class="toplogo">Auto-Now</p></a>
+      </h1>
+          <p class="introduction">Votre nouveau site consacre a l'actualite Automobile et aux nouvelles technologies, <strong>site actuellement en construction</strong></p>
+</header>
+
+<nav class="navbar">
+    <ul>
+      <li class="accueil"><a href="index.html" title="Accueil du site">ACCUEIL</a></li>
+      <li><a href="actus.html" title="Voir les actualités">ACTUS</a></li>
+      <li><a href="#">ESSAI</a></li>
+      <li><a href="#">BLOG</a></li>
+    </ul>
+  </nav>
+
+
+<h2>Inscrition a la newsletter</h2>
+<br/>
+
+<form method="post" action="traitement.php">
+
+    <p>
+    <label for="pseudo">Votre pseudo: <br/>
+    </label><input type="text" name="pseudo" id="pseudo" placeholder="Ex: Tete de..." maxlength="20" autofocus required/>
+    <br/>   <br/>
+    <label for="pass">Votre mot de passe: <br/>
+    </label><input type="password" name="pass" id="pass" placeholder="********"  minlength="8" required/>
+    <br/>   <br/>
+    <label for="email">Votre adresse email<br/>
+    </label><input type="email" name="email" id="email"required/>
+    <br/>   <br/>
+    <label for="departement">Numero de departement<br/>
+    </label><input type="number" name="departement" id="departement">
+    <br/>   <br/>
+    <label for="ameliorer">Comment pensez-vous que je pourrais ameliorer mon site ?</label><br/>
+    <textarea name="ameliorer" id="ameliorer"rows="10" cols="50"></textarea>
+    <br/>   <br/>
+    
+
+       <label>Veuillez indiquer la tranche d'age dans laquelle vous vous situez :</label><br />
+       <input type="radio" name="age" value="moins15" id="moins15"> <label for="moins15">Moins de 15 ans</label><br />
+       <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+       <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+       <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ca ?!</label>
+       <br/>   <br/>
+
+    <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays" id="pays">
+           <option value="france">France</option>
+           <option value="espagne">Espagne</option>
+           <option value="italie">Italie</option>
+           <option value="royaume-uni">Royaume-Uni</option>
+           <option value="canada">Canada</option>
+           <option value="etats-unis">États-Unis</option>
+           <option value="chine">Chine</option>
+           <option value="japon">Japon</option>
+       </select>
+         <br/>   <br/>
+    <input type="checkbox" name="accord" id="accord"required/><label for="accord">J'accepte que mes donnees soient traitees par Auto-Now</label>
+    <br/>   <br/>
+
+
+<input type="submit" value="C'est parti !" />
+<input type="reset" value="Supprimer" />
+
+   </p>
+
+</form>
+   
+
+
+
+
+
+<footer>
+           <!--Penser a modifier les liens pour Auto-Now-->
+  <p class="social">Suivez Auto-Now sur les reseaux sociaux :</br><a href="https://twitter.com/AutoNowfr" target="_blank" img class="logo twitter"><img src="image/twitter-logo.jpg" alt="logo Twitter" title="sur Twitter" /></a><a href="https://www.instagram.com/autonowfr/" target="_blank" img class="logo Instagram"><img src="image/instalogo.png" alt="logo Instagram" title="sur Insta" /></a><br><a href="mailto:contact.autonow@gmail.com">Nous contacter par email</p>
+         
+
+</footer>
+
+
+    </body>
+</html>

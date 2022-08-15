@@ -1,0 +1,326 @@
+@import "../scss/Utils/Mixins";
+@import "../scss/Utils/Variables";
+
+
+@font-face {
+    font-family: "bauhs93";
+    src: url('../font/BAUHS93.ttf');
+}
+@font-face {
+	font-family: 'bauhslight';
+	src: url('../font/bauhslight.otf');
+}
+@font-face{
+	font-family: "silkscreen";
+	src: url("../font/Silkscreen/Silkscreen-Regular.ttf");
+}
+
+body{
+	display: inline;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: 1300px;
+}
+
+.fa-arrow-turn-down-right{
+	color: $color-1;
+}
+
+.contenu{
+	max-width: 1300px;
+	padding: 0px;
+	margin: auto;
+    position: relative;
+	font-family: arial;
+	animation-name: contenu;
+	animation-duration: 1700ms;
+	z-index: 10;
+	animation-fill-mode: forwards;
+}
+
+@keyframes contenu{
+	0%{
+		opacity: 0;
+	}
+	70%{
+		opacity: 0;
+	}
+	90%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.loaderbox{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	animation-name: loaderbox;
+	animation-duration: 2500ms;
+	animation-fill-mode: forwards;
+	z-index: 4;
+}
+
+
+@keyframes loaderbox{
+	0%{
+		opacity: 1;
+		z-index: 9;
+	}
+	70%{
+		opacity: 1;
+		z-index: 9;
+	}
+	100%{
+		opacity: 0;
+		z-index: 1;
+	}
+}
+
+.loader{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	animation-name: loader;
+	animation-duration: 1500ms;
+	animation-fill-mode: forwards;
+	z-index: 9;
+	img{
+		width: 20%;
+		margin: auto;
+	}
+}
+
+@keyframes loader{
+	0%{
+		opacity: 1;
+		transform: scale(1);
+	}
+	20%{
+		transform: scale(1.9);
+	}
+	40%{
+		transform: scale(1.3);
+	}
+	70%{
+		opacity: 1;
+		transform: scale(1.9);
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+
+header{
+	@include header;
+}
+
+h1{
+	text-align: center;
+    img{
+        width: 50%;
+        max-width: 500px;
+    }
+}
+
+.navbar{
+    @include navbar;
+}
+
+h2{
+    font-family: bauhs93;
+    font-size: 2em;
+    color: white ;
+    background: $color-1;
+    border: double white 10px;
+    border-radius: 30px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.lastactbox{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 50px 0px 50px 0px;
+}
+
+.lastact{
+    @include lastact
+}
+
+p{
+	font-family: arial;
+	font-weight: lighter;
+	font-size: 1.3em;
+	text-align: justify;
+	width: 80%;
+
+}
+
+a p{
+	font-family: bauhslight;
+	font-size: 0.6em;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: black;
+    
+}
+
+.insnews{
+	font-size: 1.7em;
+	text-align: center;
+	font-family: bauhslight;
+	margin: auto;
+	margin-top: 30px;
+	p{
+		margin: auto;
+	}
+}
+
+.social{
+	font-size: 1.6em;
+	padding: 15px;
+}
+
+video{
+	display: flex;
+	margin: auto;
+	width: 70%;
+	border-radius: 20px;
+}
+
+.actus a{
+	color: white;
+}
+
+article{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+form p{
+	text-align: center;
+	margin: auto;
+	font-family: bauhslight;
+}
+
+aside{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+aside img{
+	border-radius: 30px;
+	width: 80%;
+}
+
+
+footer{
+	background-image: url(../image/gradient.jpg);
+	margin-bottom: -59px;
+	.social{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+		color: white;
+		padding: 20px;
+		img{
+			width: 55px;
+			border-radius: 20px;
+			margin-top: 40px;
+			margin-left: 10px;
+			margin-right: 10px;
+			transition-duration: 300ms;
+			&:hover{
+				transform: scale(1.2) rotate(1turn);
+				transition: 300ms;
+			}
+		}
+	}
+	ul{
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 40px;
+	}
+	li{
+		margin-bottom: 30px;
+		list-style: none;
+		transition-duration: 300ms;
+		font-size: 22px;
+			&:hover{
+				transform: scale(1.2);
+				transition: 300ms;
+			}
+	}
+	a{
+		color: white;
+		text-decoration: none;
+	}
+}
+
+
+@media screen and (max-width: 1024px){
+
+header{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+.toplogo{
+	font-size: 2.3em;
+	font-family: BAUHS93;
+	color: white;
+	white-space: nowrap;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+.introduction{
+	font-family: bauhslight;
+	color: white;
+	font-size: 1.6em;
+	text-align: center;
+	width: 90%;
+	margin-top: -20px
+}
+}
+
+.navbar{
+	@include navbarmob;
+}
+
+
+.lastact{
+	@include lastactmob
+}
+
+}

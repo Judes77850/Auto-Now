@@ -1,0 +1,171 @@
+@mixin header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../image/gradient.jpg);
+    margin-top: -40px;
+    .toplogo{
+        @include toplogo;
+    }
+    a{
+        text-decoration: none;
+    }
+    .introduction{
+        font-family: bauhslight;
+        color: white;
+        font-size: 1.6em;
+        text-align: center;
+        width: 60%;
+    }
+}
+
+@mixin toplogo{
+    font-size: 2.5em;
+    font-family: BAUHS93;
+    color: white;
+    white-space: nowrap;
+}
+
+@mixin navbar {
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    color: rgb(13, 103, 47);
+    box-shadow: lightgrey 3px 3px 15px;
+    border-radius: 10px;
+    list-style: none;
+    padding: 5px 0px 5px 0px;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    li{
+        text-align: center;
+        list-style-type: none;
+        font-family: "bauhs93";
+        font-size: 2.5em;
+        border-radius: 5px;
+        a{
+            color: $color-1;
+            text-decoration: none;
+            padding: 5px;
+            transition-duration: 300ms;
+            &:hover{
+                color: white;
+                background-color: $color-1;
+                border-radius: 5px;
+                padding: 5px;
+                transition-duration: 200ms;
+            }
+        }
+    }
+}
+
+@mixin navbarmob {
+    width: 100%;
+    color: rgb(13, 103, 47);
+    box-shadow: lightgrey 3px 3px 15px;
+    border-radius: 30px;
+    list-style: none;
+    padding: 5px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    li{
+        text-align: center;
+        list-style-type: none;
+        font-family: "bauhs93";
+        font-size: 2em;
+        width: 100%;
+        border-radius: 10px;
+        transition-duration: 500ms;
+        a{
+            color: rgb(13, 103, 47);
+            text-decoration: none;
+            width: 100%;
+            &:hover{
+                color: white;
+                background-color: $color-1;
+                border-radius: 10px;
+                transition-duration: 500ms;
+            }
+        }
+    }
+}
+
+
+@mixin lastact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: lightgray  3px 3px 15px;
+    border-radius: 30px;
+    width: 45%;
+    margin: 15px;
+    transition-duration: 200ms;
+    &:hover{
+        transform: scale(1.05);
+        transition: 200ms ease-in-out;
+    }
+    p{
+        text-align: center;
+        background-color: $color-1;
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 0px;
+        color: white;
+    }
+    a{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0px 0px 30px 30px;
+            margin-bottom: -5px;
+        }
+    }
+}
+
+@mixin lastactmob{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: lightgray  3px 3px 15px;
+    border-radius: 30px;
+    width: 100%;
+    transition-duration: 200ms;
+    &:hover{
+        transform: scale(1.02);
+        transition: 200ms ease-in-out;
+    }
+    p{
+        text-align: center;
+        background-color: $color-1;
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 0px;
+        color: white;
+    }
+    a{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0px 0px 30px 30px;
+            margin-bottom: -5px;
+        }
+    }
+}
