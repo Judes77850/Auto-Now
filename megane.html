@@ -11,17 +11,19 @@
   gtag('config', 'G-XDCTXM84V5');
 </script>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="scss/style.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
         <title>Auto-Now</title>
     </head>
 
-    <body>
+<body>
+        <div class="loaderbox">
+            <div class="loader"><img src="image/logo.detoure.png" alt="logo Auto Now"/></div>
+        </div>
+    <div class="contenu">  
 
 <header>
-    <h1>
-        <a href="index.html" title="Accueil du site"><p class="toplogo">Auto-Now</p></a>
-      </h1>
-          <p class="introduction">Votre nouveau site consacre a l'actualite Automobile et aux nouvelles technologies, <strong>site actuellement en construction</strong></p>
+    <h1><a href="index.html" title="Accueil du site"><p class="toplogo">Auto-Now</p></a></h1>
+    <p class="introduction">Votre nouveau site consacre a l'actualite Automobile et aux nouvelles technologies, <strong>site actuellement en construction</strong></p>
 </header>
 
 <nav class="navbar">
@@ -36,7 +38,10 @@
 
 <article>
     <h2>Renault Megane e-tech</h2>
-        <video controls poster="poster.png" src="rz450e.mp4" preload="none"></video> 
+    <div class="artimg">
+        <img src="megane/meg7.jpeg" alt=" Megane E-tech">
+    </div>
+
 <p class="introduction">La nouvelle Renault Megane E-tech en détails</p>
 
 <p>LEXUS attaque sur le marché du véhicule électrique premium. </p>
@@ -54,11 +59,24 @@
         <a href="RZ450e/int3.jpg" title="RZ450e"><img class="illustration" src="RZ450e/int3mini.jpg" alt="RZ450e interior"></a> 
     </aside>
 </article>
-
-
 <footer>
-    <p class="social">Suivez Auto-Now sur les reseaux sociaux :</br><a href="https://twitter.com/AutoNowfr" target="_blank" img class="logo twitter"><img src="image/twitter-logo.jpg" alt="logo Twitter" title="sur Twitter" /></a><a href="https://www.instagram.com/autonowfr/" target="_blank" img class="logo Instagram"><img src="image/instalogo.png" alt="logo Instagram" title="sur Insta" /></a><br><a href="mailto:contact.autonow@gmail.com">Nous contacter par email</p>
-</footer>
+    <div class="social">
+    Suivez Auto-Now sur les reseaux sociaux :
+        <div class="sociallink">
+            <a href="https://twitter.com/AutoNowfr" target="blank" img class="logo twitter">
+                <img src="image/twitter-logo.jpg" alt="logo Twitter" title="sur Twitter"/>
+            </a>
+            <a href="https://www.instagram.com/autonowfr/" target="blank" img class="logo instagram">
+                <img src="image/instalogo.png" alt="logo instagram" title="sur Insta" />
+            </a>
+        </div>
+    </div>
+    <ul>
+        <li><a href="#">à propos</a></li>
+        <li><a href="mailto:contact.autonow@gmail.com">contact</a></li>
+        <li><a href="#"">liens partenaires</a></li>
+    </ul>
+  </footer>
 
 </body>
 </html>
